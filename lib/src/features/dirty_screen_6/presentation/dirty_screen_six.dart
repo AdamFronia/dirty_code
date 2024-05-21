@@ -1,3 +1,4 @@
+import 'package:dirty_code/src/features/dirty_screen_6/presentation/warning.dart';
 import 'package:flutter/material.dart';
 
 class DirtyScreenSix extends StatelessWidget {
@@ -8,81 +9,25 @@ class DirtyScreenSix extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Dirty Screen #6"),
       ),
-      body: SingleChildScrollView(
+      body: const SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
           children: [
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.yellow,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.warning, color: Colors.black),
-                  SizedBox(width: 8),
-                  Text(
-                    'Warning 1',
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                ],
-              ),
+            Warning(
+              title: "Warning 1",
+              colors: Colors.yellow,
             ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.amber,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.warning, color: Colors.black),
-                  SizedBox(width: 8),
-                  Text(
-                    'Warning 2',
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                ],
-              ),
+            Warning(
+              title: "Warning 2",
+              colors: Colors.amber,
             ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.orange,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.warning, color: Colors.black),
-                  SizedBox(width: 8),
-                  Text(
-                    'Warning 3',
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                ],
-              ),
+            Warning(
+              title: "Warning 3",
+              colors: Colors.orange,
             ),
-            Container(
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(12),
-                color: Colors.deepOrange,
-              ),
-              margin: const EdgeInsets.all(4),
-              padding: const EdgeInsets.all(16.0),
-              child: const Row(
-                children: [
-                  Icon(Icons.warning, color: Colors.black),
-                  SizedBox(width: 8),
-                  Text(
-                    'Warning 4',
-                    style: TextStyle(fontSize: 20, color: Colors.black),
-                  ),
-                ],
-              ),
+            Warning(
+              title: "Warning 4",
+              colors: Colors.deepOrange,
             ),
           ],
         ),
